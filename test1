@@ -1,0 +1,15 @@
+#!/bin/bash
+
+a=0
+x=0
+y=0
+while(($a\<65))
+do 
+	let "a++"
+	./alg6.2 -x $x -y $y -t 1
+	let "x++"
+	if(($x\>7)); then 
+		x=0
+		let "y++";
+	fi;
+done
